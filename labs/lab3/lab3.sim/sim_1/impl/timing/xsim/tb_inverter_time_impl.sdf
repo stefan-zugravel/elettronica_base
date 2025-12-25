@@ -1,0 +1,50 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "inverter")
+(DATE "Thu Dec 25 14:01:44 2025")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2022.2")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE X_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (832.2:965.8:965.8) (832.2:965.8:965.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE ZN_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2475.1:2631.4:2631.4) (2475.1:2631.4:2631.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE ZN_OBUF_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+    (CELLTYPE "inverter")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT X_IBUF_inst/O ZN_OBUF_inst_i_1/I0 (1023.1:1212.1:1212.1) (1023.1:1212.1:1212.1))
+      (INTERCONNECT ZN_OBUF_inst_i_1/O ZN_OBUF_inst/I (1323.7:1529.7:1529.7) (1323.7:1529.7:1529.7))
+      )
+    )
+)
+)
