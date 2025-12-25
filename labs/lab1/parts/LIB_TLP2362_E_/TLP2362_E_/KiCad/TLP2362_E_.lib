@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model TLP2362_E_
+#/668263/1621604/2.50/5/4/Integrated Circuit
+DEF TLP2362_E_ IC 0 30 Y Y 1 F N
+F0 "IC" 1450 300 50 H V L CNN
+F1 "TLP2362_E_" 1450 200 50 H V L CNN
+F2 "11-4L1S(5-PIN-SOIC)" 1450 100 50 H I L CNN
+F3 "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-SFU1/DSASFU100019761.pdf" 1450 0 50 H I L CNN
+F4 "High Speed Optocouplers Photo-IC 6V VCC 3750 Vrms 6K Vtr" 1450 -100 50 H I L CNN "Description"
+F5 "" 1450 -200 50 H I L CNN "Height"
+F6 "757-TLP2362E" 1450 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Toshiba/TLP2362E?qs=sRdS99IVWC99506MMfSUIA%3D%3D" 1450 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Toshiba" 1450 -500 50 H I L CNN "Manufacturer_Name"
+F9 "TLP2362(E)" 1450 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ANODE 1 0 0 200 R 50 50 0 0 P
+X CATHODE 3 0 -100 200 R 50 50 0 0 P
+X GND 4 1600 -200 200 L 50 50 0 0 P
+X VO_(OUTPUT) 5 1600 -100 200 L 50 50 0 0 P
+X VCC 6 1600 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1400 100 1400 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

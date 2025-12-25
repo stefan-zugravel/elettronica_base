@@ -1,0 +1,16 @@
+.TLP2362_E_ :1 ;High Speed Optocouplers Photo-IC 6V VCC 3750 Vrms 6K Vtr
+"11-4L1S_5-PIN-SOIC_"
+*STM IC
+*NGS
+*PLB 1="ANODE" 3="CATHODE" 4="GND" 5="VO (OUTPUT)" 6="VCC"
+*MXP 5
+*DFN TLP2362_E_
+~!Mouser Part Number (757-TLP2362E)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Toshiba/TLP2362E?qs=sRdS99IVWC99506MMfSUIA%3D%3D)
+~!Manufacturer_Name (Toshiba)
+~!Manufacturer_Part_Number (TLP2362(E))
+~!Link Datasheet (https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-SFU1/DSASFU100019761.pdf)
+~!Height (-)
+~!3D_Model (TLP2362_E_)
+TLP2362_E_
+1.1!U 3.1!U 4.1!U 5.1!U 6.1!U 

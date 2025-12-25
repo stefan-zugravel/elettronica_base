@@ -1,0 +1,16 @@
+.TRV_2-0511M :1 ;2 Watt DC/DC converter, medical/industrial, 1.5:1 input, regulated, 5000 VAC isolation, 2xMOPP, encpasulated, SIP-9
+TRV20511M
+*STM PS
+*NGS
+*PLB 1="+VIN" 2="-VIN" 7="-VOUT" 9="+VOUT"
+*MXP 4
+*DFN TRV_2-0511M
+~!Mouser Part Number (495-TRV2-0511M)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/TRACO-Power/TRV-2-0511M?qs=vvQtp7zwQdPTJ%2FNukxuIBA%3D%3D)
+~!Manufacturer_Name (Traco Power)
+~!Manufacturer_Part_Number (TRV 2-0511M)
+~!Link Datasheet (https://tracopower.com/trv2m-datasheet/)
+~!Height (13mm)
+~!3D_Model (TRV_2-0511M)
+TRV_2-0511M
+1.1!U 2.1!U 7.1!U 9.1!U 
