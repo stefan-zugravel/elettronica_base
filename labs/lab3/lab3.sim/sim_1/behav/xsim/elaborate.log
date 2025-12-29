@@ -1,7 +1,7 @@
 Vivado Simulator v2022.2
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: /home/user/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_inverter_behav xil_defaultlib.tb_inverter -log elaborate.log 
-Using 8 slave threads.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mux_behav xil_defaultlib.tb_mux -log elaborate.log 
+Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
@@ -10,6 +10,10 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.inverter [inverter_default]
-Compiling architecture behavioral of entity xil_defaultlib.tb_inverter
-Built simulation snapshot tb_inverter_behav
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ClockGen [clockgen_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux [mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_mux
+Built simulation snapshot tb_mux_behav

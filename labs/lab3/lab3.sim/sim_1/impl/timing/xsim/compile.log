@@ -1,3 +1,7 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/work_docker/lab3/lab3.sim/sim_1/impl/timing/xsim/tb_inverter_time_impl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module inverter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stefa/Desktop/elettronica_base/labs/lab3/lab3.sim/sim_1/impl/timing/xsim/tb_mux_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
 INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/stefa/Desktop/elettronica_base/labs/lab3/lab3.srcs/sim_1/new/ClockGen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ClockGen'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/stefa/Desktop/elettronica_base/labs/lab3/lab3.srcs/sim_1/new/tb_mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_mux'

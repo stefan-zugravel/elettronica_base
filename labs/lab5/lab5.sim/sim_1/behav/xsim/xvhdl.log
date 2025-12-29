@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/stefa/Desktop/elettronica_base/labs/lab5/lab5.srcs/sources_1/new/CounterBCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CounterBCD'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/stefa/Desktop/elettronica_base/labs/lab5/lab5.srcs/sim_1/new/tb_CounterBCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_CounterBCD'

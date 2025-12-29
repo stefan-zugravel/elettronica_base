@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
 # Vivado v2022.2 (64-bit)
-# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Thu Dec 25 13:58:48 2025
-# Process ID: 1724
-# Current directory: /home/user/work_docker/lab3/lab3.runs/impl_1
-# Command line: vivado -log inverter.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source inverter.tcl -notrace
-# Log file: /home/user/work_docker/lab3/lab3.runs/impl_1/inverter.vdi
-# Journal file: /home/user/work_docker/lab3/lab3.runs/impl_1/vivado.jou
-# Running On: 74fc66b9c772, OS: Linux, CPU Frequency: 2502.057 MHz, CPU Physical cores: 1, Host memory: 37770 MB
+# Start of session at: Mon Dec 29 18:12:38 2025
+# Process ID: 10884
+# Current directory: C:/Users/stefa/Desktop/elettronica_base/labs/lab3/lab3.runs/impl_1
+# Command line: vivado.exe -log mux.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mux.tcl -notrace
+# Log file: C:/Users/stefa/Desktop/elettronica_base/labs/lab3/lab3.runs/impl_1/mux.vdi
+# Journal file: C:/Users/stefa/Desktop/elettronica_base/labs/lab3/lab3.runs/impl_1\vivado.jou
+# Running On: LAPTOP-JR95NK3B, OS: Windows, CPU Frequency: 1996 MHz, CPU Physical cores: 8, Host memory: 7412 MB
 #-----------------------------------------------------------
-source inverter.tcl -notrace
+source mux.tcl -notrace

@@ -44,8 +44,8 @@ begin
 
    -- signal assignment
    ZN <= not X ; 
-   --ZN <= not X after 3ns ;
-   --ZN <= '0' when X = '1' else '1' ;
-   --ZT <= X when OE = '1' else 'z' ;
+   --ZN <= not X after 3ns ; -- not with delay
+   --ZN <= '0' when X = '1' else '1' ; -- not with mux
+   --ZT <= X when OE = '1' else 'z' ; -- buffer with output enable
 
 end Behavioral;

@@ -1,6 +1,9 @@
 0.7
 2020.2
 Oct 14 2022
-05:07:14
-/home/user/work_docker/lab3/lab3.srcs/sim_1/new/tb_inverter.vhd,1766667428,vhdl,,,,tb_inverter,,,,,,,,
-/home/user/work_docker/lab3/lab3.srcs/sources_1/new/inverter.vhd,1766667250,vhdl,,,,inverter,,,,,,,,
+05:20:55
+C:/Users/stefa/Desktop/elettronica_base/labs/lab3/lab3.srcs/sim_1/new/ClockGen.vhd,1767027480,vhdl,,,,clockgen,,,,,,,,
+C:/Users/stefa/Desktop/elettronica_base/labs/lab3/lab3.srcs/sim_1/new/tb_logic_gates.vhd,1766951449,vhdl,,,,tb_logic_gates,,,,,,,,
+C:/Users/stefa/Desktop/elettronica_base/labs/lab3/lab3.srcs/sim_1/new/tb_mux.vhd,1767027770,vhdl,,,,tb_mux,,,,,,,,
+C:/Users/stefa/Desktop/elettronica_base/labs/lab3/lab3.srcs/sources_1/new/logic_gates.vhd,1766932816,vhdl,,,,logic_gates,,,,,,,,
+C:/Users/stefa/Desktop/elettronica_base/labs/lab3/lab3.srcs/sources_1/new/mux.vhd,1766952859,vhdl,,,,mux,,,,,,,,
