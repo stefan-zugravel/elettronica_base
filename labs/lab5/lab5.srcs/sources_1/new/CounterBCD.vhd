@@ -35,6 +35,7 @@ entity CounterBCD is
    port (
       clk : in  std_logic ;
       rst : in  std_logic ;
+      clk_sel : in  std_logic ;
       BCD : out std_logic_vector(3 downto 0)
    ) ;
 end CounterBCD;
@@ -211,3 +212,130 @@ begin
    -- type casting
    BCD <= std_logic_vector(count) ;
 end architecture rtl_ticker ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+architecture rtl_PLL of CounterBCD is
+
+
+   --------------------------------
+   --   components declaration   --
+   --------------------------------
+
+   component clk_wiz_0 is
+     port (
+        CLK_IN      : in  std_logic ;
+        CLK_OUT_100 : out std_logic ;
+        CLK_OUT_200 : out std_logic ;
+        LOCKED      : out std_logic
+     ) ;
+   end component clk_wiz_0 ;
+
+
+   component TickCounter is
+      generic(
+         MAX : positive := 10414   -- default is ~9.6 kHz as for UART baud-rate
+      ) ;
+      port(
+         clk  : in  std_logic ;
+         tick : out std_logic
+      ) ;
+   end component ;
+
+
+   --------------------------------------
+   --   internal signals declaration   --
+   --------------------------------------
+
+   -- PLL signals
+   signal pll_clk_100, pll_clk_200, pll_clk, pll_locked : std_logic ;
+
+   -- single clock-pulse from "ticker" used as count-enable for the BCD counter
+   signal count_en : std_logic ;
+
+   -- 4-bit "internal" BCD counter
+   signal count : unsigned(3 downto 0) := (others => '0') ;
+
+
+begin
+
+
+   ------------------------------------
+   --   PLL IP core (Clock Wizard)   --
+   ------------------------------------
+
+   -- the PLL generates two output clock signals, 100 MHz and 200 MHz frequency
+   PLL_inst : clk_wiz_0 port map(CLK_IN => clk, CLK_OUT_100 => pll_clk_100, CLK_OUT_200 => pll_clk_200, LOCKED => pll_locked) ;
+
+
+   -- MUX to switch between 100 MHz and 200 MHz
+   --pll_clk <= pll_clk_100 when clk_sel = '0' else pll_clk_200 ;
+    pll_clk <=  pll_clk_200;
+
+   ------------------------
+   --   "tick" counter   --
+   ------------------------
+
+   --
+   -- **NOTE
+   --
+   -- Assuming 100 MHz input clock we can generate up to 2^32 -1 different tick periods, e.g.
+   --
+   -- MAX =    10 => one "tick" asserted every    10 x 10 ns = 100 ns  => logic "running" at  10 MHz
+   -- MAX =   100 => one "tick" asserted every   100 x 10 ns =   1 us  => logic "running" at   1 MHz
+   -- MAX =   200 => one "tick" asserted every   200 x 10 ns =   2 us  => logic "running" at 500 MHz
+   -- MAX =   500 => one "tick" asserted every   500 x 10 ns =   5 us  => logic "running" at 200 kHz
+   -- MAX =  1000 => one "tick" asserted every  1000 x 10 ns =  10 us  => logic "running" at 100 kHz
+   -- MAX = 10000 => one "tick" asserted every 10000 x 10 ns = 100 us  => logic "running" at  10 kHz etc.
+
+   TickCounter_inst : TickCounter generic map(MAX => 100) port map(clk => pll_clk, tick => count_en) ;          -- OK for simulations
+   --TickCounter_inst : TickCounter generic map(MAX => 150000000) port map(clk => pll_clk, tick => count_en) ;  -- OK for LED mapping
+
+
+   ------------------------------------------------------
+   --   BCD counter with count-enable (VHDL process)   --
+   ------------------------------------------------------
+
+   process(pll_clk)
+   begin
+      if( rising_edge(pll_clk) ) then
+
+         if( (rst = '1') or (pll_locked = '0') ) then   -- **NOTE: we also use the "locked" signal from the PLL as reset !
+            count <= (others => '0') ;
+         elsif( count_en = '1' ) then
+
+            if( to_integer(count) = 9 ) then
+               count <= (others => '0') ;
+
+            else
+               count <= count + 1 ;
+
+            end if ;
+         end if ;
+      end if ;
+
+   end process ;
+
+   -- type casting
+   BCD <= std_logic_vector(count) ;
+
+end architecture rtl_PLL ; 

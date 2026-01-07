@@ -51,7 +51,7 @@ architecture testbench of tb_CounterBCD is
    component CounterBCD is
       port (
          clk     : in  std_logic ;
-         --clk_sel : in  std_logic ;   -- for PLL design: 0 = 100 MHz, 1 = 200 MHz
+         clk_sel : in  std_logic ;   -- for PLL design: 0 = 100 MHz, 1 = 200 MHz
          rst     : in  std_logic ;
          BCD     : out std_logic_vector(3 downto 0)
       ) ;
@@ -66,7 +66,7 @@ architecture testbench of tb_CounterBCD is
    signal clk_board : std_logic ;
 
    -- MUX control to switch between 100 MHz and 200 MHz PLL output clock
-   --signal clk_sel : std_logic := '0' ;   -- default: 100 MHz
+   signal clk_sel : std_logic := '0' ;   -- default: 100 MHz
 
    -- reset signal (e.g. mapped to a push-button or slide-switch)
    signal reset : std_logic ;
@@ -84,8 +84,8 @@ architecture testbench of tb_CounterBCD is
    for DUT : CounterBCD
       --use entity work.CounterBCD(rtl_simple) ;
       --use entity work.CounterBCD(rtl_bad) ;
-      use entity work.CounterBCD(rtl_ticker) ;
-      --use entity work.CounterBCD(rtl_PLL) ;
+      --use entity work.CounterBCD(rtl_ticker) ;
+      use entity work.CounterBCD(rtl_PLL) ;
 
 begin
 
@@ -100,8 +100,8 @@ begin
    --   device under test (DUT)   --
    ---------------------------------
 
-   --DUT : CounterBCD port map (clk => clk_board, clk_sel => clk_sel, rst => reset, BCD => BCD) ;
-   DUT : CounterBCD port map (clk => clk_board, rst => reset, BCD => BCD) ;
+   DUT : CounterBCD port map (clk => clk_board, clk_sel => clk_sel, rst => reset, BCD => BCD) ;
+   --DUT : CounterBCD port map (clk => clk_board, rst => reset, BCD => BCD) ;
 
 
    -----------------------
@@ -118,7 +118,7 @@ begin
 
       wait for 50 us ;
 
-      --clk_sel <= '1' ;    -- switch to 200 MHz
+      clk_sel <= '1' ;    -- switch to 200 MHz
 
       wait for 20 us ;
 

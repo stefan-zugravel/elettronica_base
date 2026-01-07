@@ -27,7 +27,7 @@ entity CounterBCD_wrapper is
 
    port (
       clk     : in  std_logic ;
-      --clk_sel : in  std_logic ;   -- for PLL design: 0 = 100 MHz, 1 = 200 MHz
+      clk_sel : in  std_logic ;   -- for PLL design: 0 = 100 MHz, 1 = 200 MHz
       rst     : in  std_logic ;
       BCD     : out std_logic_vector(3 downto 0)
    ) ;
@@ -44,7 +44,7 @@ architecture wrapper of CounterBCD_wrapper is
    component CounterBCD is
       port(
          clk     : in  std_logic ;
-         --clk_sel : in  std_logic ;
+         clk_sel : in  std_logic ;
          rst     : in  std_logic ;
          BCD     : out std_logic_vector(3 downto 0)
       ) ;
@@ -73,8 +73,8 @@ architecture wrapper of CounterBCD_wrapper is
    for CounterBCD_inst : CounterBCD
       --use entity work.CounterBCD(rtl_simple) ;
       --use entity work.CounterBCD(rtl_bad) ;
-      use entity work.CounterBCD(rtl_ticker) ;
-      --use entity work.CounterBCD(rtl_PLL) ;
+      --use entity work.CounterBCD(rtl_ticker) ;
+      use entity work.CounterBCD(rtl_PLL) ;
 
 
    -- BCD count from core logic fed to pre-placed OBUF output buffers
@@ -86,8 +86,8 @@ begin
    --   BCD counter implementation (RTL)   --
    ------------------------------------------
 
-   --CounterBCD_inst : CounterBCD port map(clk => clk, clk_sel => clk_sel, rst => rst, BCD => BCD_int) ;
-   CounterBCD_inst : CounterBCD port map(clk => clk, rst => rst, BCD => BCD_int) ;
+   CounterBCD_inst : CounterBCD port map(clk => clk, clk_sel => clk_sel, rst => rst, BCD => BCD_int) ;
+   --CounterBCD_inst : CounterBCD port map(clk => clk, rst => rst, BCD => BCD_int) ;
 
    --------------------------------------------------------
    --   RTL output buffers with detailed configuration   --
@@ -95,7 +95,16 @@ begin
 
    -- use a "generate" for loop to easily instantiate and CONFIGURE a bank of output buffers
    OutputBuffers : for k in 0 to 3 generate
-      OBUF_inst : OBUF generic map(IOSTANDARD => "LVCMOS33", DRIVE => 12, SLEW => "FAST") port map(I=> BCD_int(k), O => BCD(k)) ;
+      OBUF_inst : OBUF
+        generic map(
+            IOSTANDARD => "LVCMOS33",
+            DRIVE => 12,
+            SLEW => "FAST"
+        )
+        port map(
+            I=> BCD_int(k),
+            O => BCD(k)
+        ) ;
    end generate OutputBuffers ;
 
 end architecture wrapper ;

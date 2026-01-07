@@ -1,8 +1,9 @@
 Vivado Simulator v2022.2
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_CounterBCD_behav xil_defaultlib.tb_CounterBCD -log elaborate.log 
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_CounterBCD_behav xil_defaultlib.tb_CounterBCD xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -13,8 +14,15 @@ Compiling package ieee.std_logic_1164
 Compiling package std.env
 Compiling package ieee.numeric_std
 Compiling package ieee.math_real
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
 Compiling architecture behavioral of entity xil_defaultlib.ClockGen [clockgen_default]
-Compiling architecture rtl of entity xil_defaultlib.TickCounter [\TickCounter(max=10)\]
-Compiling architecture rtl_ticker of entity xil_defaultlib.CounterBCD [counterbcd_default]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture rtl of entity xil_defaultlib.TickCounter [\TickCounter(max=100)\]
+Compiling architecture rtl_pll of entity xil_defaultlib.CounterBCD [counterbcd_default]
 Compiling architecture testbench of entity xil_defaultlib.tb_counterbcd
 Built simulation snapshot tb_CounterBCD_behav
