@@ -1,0 +1,14 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\Users\stefa\Desktop\elettronica_base\labs\lab6\lab6e.net
+Start Time: Thu Jan  8 20:55:00 2026
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+Total elapsed time: 0.386 seconds.
+
+Files loaded:
+C:\Users\stefa\Desktop\elettronica_base\labs\lab6\lab6e.net
+C:\Users\stefa\AppData\Local\LTspice\lib\cmp\standard.mos
+
