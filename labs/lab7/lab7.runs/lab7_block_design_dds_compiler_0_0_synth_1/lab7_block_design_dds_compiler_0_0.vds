@@ -1,0 +1,415 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Jan  8 15:25:47 2026
+# Process ID: 36584
+# Current directory: /home/user/elettronica_base/labs/lab7/lab7.runs/lab7_block_design_dds_compiler_0_0_synth_1
+# Command line: vivado -log lab7_block_design_dds_compiler_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab7_block_design_dds_compiler_0_0.tcl
+# Log file: /home/user/elettronica_base/labs/lab7/lab7.runs/lab7_block_design_dds_compiler_0_0_synth_1/lab7_block_design_dds_compiler_0_0.vds
+# Journal file: /home/user/elettronica_base/labs/lab7/lab7.runs/lab7_block_design_dds_compiler_0_0_synth_1/vivado.jou
+# Running On: 578c4e2301e4, OS: Linux, CPU Frequency: 2502.057 MHz, CPU Physical cores: 1, Host memory: 37770 MB
+#-----------------------------------------------------------
+source lab7_block_design_dds_compiler_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2217.180 ; gain = 63.156 ; free physical = 26905 ; free virtual = 32737
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: lab7_block_design_dds_compiler_0_0
+Command: synth_design -top lab7_block_design_dds_compiler_0_0 -part xc7a35ticsg324-1L -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 36649
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/user/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3033.758 ; gain = 431.762 ; free physical = 21697 ; free virtual = 27542
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1652.227; parent = 1379.570; children = 272.656
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6269.426; parent = 2951.141; children = 3318.285
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'lab7_block_design_dds_compiler_0_0' [/home/user/elettronica_base/labs/lab7/lab7.gen/sources_1/bd/lab7_block_design/ip/lab7_block_design_dds_compiler_0_0/synth/lab7_block_design_dds_compiler_0_0.vhd:67]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [/home/user/elettronica_base/labs/lab7/lab7.gen/sources_1/bd/lab7_block_design/ip/lab7_block_design_dds_compiler_0_0/synth/lab7_block_design_dds_compiler_0_0.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [/home/user/elettronica_base/labs/lab7/lab7.gen/sources_1/bd/lab7_block_design/ip/lab7_block_design_dds_compiler_0_0/synth/lab7_block_design_dds_compiler_0_0.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [/home/user/elettronica_base/labs/lab7/lab7.gen/sources_1/bd/lab7_block_design/ip/lab7_block_design_dds_compiler_0_0/synth/lab7_block_design_dds_compiler_0_0.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [/home/user/elettronica_base/labs/lab7/lab7.gen/sources_1/bd/lab7_block_design/ip/lab7_block_design_dds_compiler_0_0/synth/lab7_block_design_dds_compiler_0_0.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [/home/user/elettronica_base/labs/lab7/lab7.gen/sources_1/bd/lab7_block_design/ip/lab7_block_design_dds_compiler_0_0/synth/lab7_block_design_dds_compiler_0_0.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [/home/user/elettronica_base/labs/lab7/lab7.gen/sources_1/bd/lab7_block_design/ip/lab7_block_design_dds_compiler_0_0/synth/lab7_block_design_dds_compiler_0_0.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [/home/user/elettronica_base/labs/lab7/lab7.gen/sources_1/bd/lab7_block_design/ip/lab7_block_design_dds_compiler_0_0/synth/lab7_block_design_dds_compiler_0_0.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
+	Parameter C_MODULUS bound to: 9 - type: integer 
+	Parameter C_ACCUMULATOR_WIDTH bound to: 16 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_HAS_PHASE_OUT bound to: 0 - type: integer 
+	Parameter C_HAS_PHASEGEN bound to: 1 - type: integer 
+	Parameter C_HAS_SINCOS bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 7 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_NEGATIVE_COSINE bound to: 0 - type: integer 
+	Parameter C_NEGATIVE_SINE bound to: 0 - type: integer 
+	Parameter C_NOISE_SHAPING bound to: 0 - type: integer 
+	Parameter C_OUTPUTS_REQUIRED bound to: 0 - type: integer 
+	Parameter C_OUTPUT_FORM bound to: 0 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 15 - type: integer 
+	Parameter C_PHASE_ANGLE_WIDTH bound to: 15 - type: integer 
+	Parameter C_PHASE_INCREMENT bound to: 2 - type: integer 
+	Parameter C_PHASE_INCREMENT_VALUE bound to: 1111111111,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_RESYNC bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET_VALUE bound to: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_OPTIMISE_GOAL bound to: 0 - type: integer 
+	Parameter C_USE_DSP48 bound to: 0 - type: integer 
+	Parameter C_POR_MODE bound to: 0 - type: integer 
+	Parameter C_AMPLITUDE bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_S_PHASE bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_CONFIG bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_DATA bound to: 1 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_PHASE bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_22' declared at '/home/user/elettronica_base/labs/lab7/lab7.gen/sources_1/bd/lab7_block_design/ipshared/a99f/hdl/dds_compiler_v6_0_vh_rfs.vhd:47308' bound to instance 'U0' of component 'dds_compiler_v6_0_22' [/home/user/elettronica_base/labs/lab7/lab7.gen/sources_1/bd/lab7_block_design/ip/lab7_block_design_dds_compiler_0_0/synth/lab7_block_design_dds_compiler_0_0.vhd:177]
+INFO: [Synth 8-256] done synthesizing module 'lab7_block_design_dds_compiler_0_0' (0#1) [/home/user/elettronica_base/labs/lab7/lab7.gen/sources_1/bd/lab7_block_design/ip/lab7_block_design_dds_compiler_0_0/synth/lab7_block_design_dds_compiler_0_0.vhd:67]
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module sin_cos is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port chan_addr[0] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port chan_addr_del2[0] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port chan_addr_del3[0] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[3] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[2] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[1] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[0] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phase_inc_we in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phase_adj_we in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port poff_in[15] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port poff_in[14] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port poff_in[13] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port poff_in[12] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port poff_in[11] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port poff_in[10] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port poff_in[9] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port poff_in[8] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port poff_in[7] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port poff_in[6] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port poff_in[5] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port poff_in[4] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port poff_in[3] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port poff_in[2] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port poff_in[1] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port poff_in[0] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_i[15] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_i[14] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_i[13] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_i[12] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_i[11] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_i[10] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_i[9] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_i[8] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_i[7] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_i[6] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_i[5] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_i[4] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_i[3] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_i[2] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_i[1] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_i[0] in module accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RFD in module dds_compiler_v6_0_22_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CHANNEL[0] in module dds_compiler_v6_0_22_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[14] in module dds_compiler_v6_0_22_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[13] in module dds_compiler_v6_0_22_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[12] in module dds_compiler_v6_0_22_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[11] in module dds_compiler_v6_0_22_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[10] in module dds_compiler_v6_0_22_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[9] in module dds_compiler_v6_0_22_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[8] in module dds_compiler_v6_0_22_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[7] in module dds_compiler_v6_0_22_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[6] in module dds_compiler_v6_0_22_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[5] in module dds_compiler_v6_0_22_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[4] in module dds_compiler_v6_0_22_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[3] in module dds_compiler_v6_0_22_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COSINE[2] in module dds_compiler_v6_0_22_core is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3099.340 ; gain = 497.344 ; free physical = 21824 ; free virtual = 27671
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1788.397; parent = 1515.909; children = 272.656
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6393.516; parent = 3075.230; children = 3318.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3099.340 ; gain = 497.344 ; free physical = 21824 ; free virtual = 27670
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1788.397; parent = 1515.909; children = 272.656
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6412.102; parent = 3093.816; children = 3318.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3099.340 ; gain = 497.344 ; free physical = 21824 ; free virtual = 27670
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1788.397; parent = 1515.909; children = 272.656
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6412.102; parent = 3093.816; children = 3318.285
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3099.340 ; gain = 0.000 ; free physical = 21826 ; free virtual = 27672
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/user/elettronica_base/labs/lab7/lab7.gen/sources_1/bd/lab7_block_design/ip/lab7_block_design_dds_compiler_0_0/lab7_block_design_dds_compiler_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/user/elettronica_base/labs/lab7/lab7.gen/sources_1/bd/lab7_block_design/ip/lab7_block_design_dds_compiler_0_0/lab7_block_design_dds_compiler_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/user/elettronica_base/labs/lab7/lab7.runs/lab7_block_design_dds_compiler_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/user/elettronica_base/labs/lab7/lab7.runs/lab7_block_design_dds_compiler_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3243.031 ; gain = 0.000 ; free physical = 21707 ; free virtual = 27568
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3243.773 ; gain = 0.727 ; free physical = 21716 ; free virtual = 27578
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/user/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 3243.883 ; gain = 641.887 ; free physical = 21715 ; free virtual = 27581
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1788.397; parent = 1515.909; children = 272.656
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6536.918; parent = 3218.633; children = 3318.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 3243.883 ; gain = 641.887 ; free physical = 21714 ; free virtual = 27581
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1788.397; parent = 1515.909; children = 272.656
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6537.043; parent = 3218.758; children = 3318.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/user/elettronica_base/labs/lab7/lab7.runs/lab7_block_design_dds_compiler_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 3243.883 ; gain = 641.887 ; free physical = 21714 ; free virtual = 27581
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1788.397; parent = 1515.909; children = 272.656
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6537.098; parent = 3218.812; children = 3318.285
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6040] Register i_rtl.i_quarter_table.i_has_sin.i_addr_mod_stage1.mod_sin_addr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 3243.883 ; gain = 641.887 ; free physical = 21711 ; free virtual = 27578
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1788.397; parent = 1515.909; children = 272.656
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6538.129; parent = 3219.844; children = 3318.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 3243.883 ; gain = 641.887 ; free physical = 21751 ; free virtual = 27614
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1788.397; parent = 1515.909; children = 272.656
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6539.641; parent = 3221.355; children = 3318.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 3265.605 ; gain = 663.609 ; free physical = 21999 ; free virtual = 27871
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1821.062; parent = 1540.761; children = 280.302
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6583.891; parent = 3265.605; children = 3318.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 3265.930 ; gain = 663.934 ; free physical = 21984 ; free virtual = 27856
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1825.309; parent = 1545.013; children = 280.302
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6584.215; parent = 3265.930; children = 3318.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 3266.148 ; gain = 664.152 ; free physical = 21947 ; free virtual = 27819
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1827.231; parent = 1546.930; children = 280.302
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6584.434; parent = 3266.148; children = 3318.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 3266.273 ; gain = 664.277 ; free physical = 21940 ; free virtual = 27787
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1827.231; parent = 1546.930; children = 280.302
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6584.559; parent = 3266.273; children = 3318.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 3266.289 ; gain = 664.293 ; free physical = 21940 ; free virtual = 27787
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1827.231; parent = 1546.930; children = 280.302
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6584.574; parent = 3266.289; children = 3318.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 3266.344 ; gain = 664.348 ; free physical = 21940 ; free virtual = 27787
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1827.231; parent = 1546.930; children = 280.302
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6584.629; parent = 3266.344; children = 3318.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 3266.355 ; gain = 664.359 ; free physical = 21940 ; free virtual = 27787
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1827.231; parent = 1546.930; children = 280.302
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6584.641; parent = 3266.355; children = 3318.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 3266.387 ; gain = 664.391 ; free physical = 21933 ; free virtual = 27780
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1827.231; parent = 1546.930; children = 280.302
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6584.672; parent = 3266.387; children = 3318.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 3266.395 ; gain = 664.398 ; free physical = 21933 ; free virtual = 27780
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1827.231; parent = 1546.930; children = 280.302
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6584.680; parent = 3266.395; children = 3318.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |     4|
+|2     |LUT1     |    10|
+|3     |LUT2     |    25|
+|4     |LUT3     |    18|
+|5     |LUT4     |     8|
+|6     |LUT5     |     5|
+|7     |LUT6     |    11|
+|8     |RAMB18E1 |     1|
+|9     |RAMB36E1 |     3|
+|12    |SRL16E   |     3|
+|13    |FDRE     |   133|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 3266.422 ; gain = 664.426 ; free physical = 21933 ; free virtual = 27780
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1827.231; parent = 1546.930; children = 280.302
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6584.707; parent = 3266.422; children = 3318.285
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3266.457 ; gain = 519.914 ; free physical = 21928 ; free virtual = 27776
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 3266.484 ; gain = 664.461 ; free physical = 21927 ; free virtual = 27777
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3266.926 ; gain = 0.000 ; free physical = 22413 ; free virtual = 28267
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3293.664 ; gain = 0.000 ; free physical = 22324 ; free virtual = 28193
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: a4cdbcc2
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 109 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:31 . Memory (MB): peak = 3293.734 ; gain = 1040.090 ; free physical = 22599 ; free virtual = 28454
+INFO: [Common 17-1381] The checkpoint '/home/user/elettronica_base/labs/lab7/lab7.runs/lab7_block_design_dds_compiler_0_0_synth_1/lab7_block_design_dds_compiler_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP lab7_block_design_dds_compiler_0_0, cache-ID = 5993522662329cfc
+INFO: [Coretcl 2-1174] Renamed 22 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/user/elettronica_base/labs/lab7/lab7.runs/lab7_block_design_dds_compiler_0_0_synth_1/lab7_block_design_dds_compiler_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lab7_block_design_dds_compiler_0_0_utilization_synth.rpt -pb lab7_block_design_dds_compiler_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  8 15:26:33 2026...

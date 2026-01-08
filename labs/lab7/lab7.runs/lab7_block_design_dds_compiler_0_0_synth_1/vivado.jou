@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Jan  8 15:25:47 2026
+# Process ID: 36584
+# Current directory: /home/user/elettronica_base/labs/lab7/lab7.runs/lab7_block_design_dds_compiler_0_0_synth_1
+# Command line: vivado -log lab7_block_design_dds_compiler_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab7_block_design_dds_compiler_0_0.tcl
+# Log file: /home/user/elettronica_base/labs/lab7/lab7.runs/lab7_block_design_dds_compiler_0_0_synth_1/lab7_block_design_dds_compiler_0_0.vds
+# Journal file: /home/user/elettronica_base/labs/lab7/lab7.runs/lab7_block_design_dds_compiler_0_0_synth_1/vivado.jou
+# Running On: 578c4e2301e4, OS: Linux, CPU Frequency: 2502.057 MHz, CPU Physical cores: 1, Host memory: 37770 MB
+#-----------------------------------------------------------
+source lab7_block_design_dds_compiler_0_0.tcl -notrace

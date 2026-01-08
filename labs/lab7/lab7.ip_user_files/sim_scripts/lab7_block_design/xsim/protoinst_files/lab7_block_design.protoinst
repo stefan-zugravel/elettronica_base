@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"lab7_block_design": {
+			"proto_instances": {
+			}
+		}
+	}
+}
