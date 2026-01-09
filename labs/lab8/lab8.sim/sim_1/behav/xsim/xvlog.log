@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_dist_mem_gen_0_0/sim/lab8_block_design_dist_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab8_block_design_dist_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab8_block_design_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab8_block_design_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_util_vector_logic_0_0/sim/lab8_block_design_util_vector_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab8_block_design_util_vector_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/hdl/lab8_block_design_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab8_block_design_wrapper

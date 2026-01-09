@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/sim/lab8_block_design.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lab8_block_design'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_pwm_0_0/sim/lab8_block_design_pwm_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lab8_block_design_pwm_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_TickCounter_0_0/sim/lab8_block_design_TickCounter_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lab8_block_design_TickCounter_0_0'

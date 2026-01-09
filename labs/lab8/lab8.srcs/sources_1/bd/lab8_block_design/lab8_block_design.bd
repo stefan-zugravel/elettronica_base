@@ -1,0 +1,319 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x5148EA4041EF439A",
+      "device": "xc7a35ticsg324-1L",
+      "gen_directory": "../../../../lab8.gen/sources_1/bd/lab8_block_design",
+      "name": "lab8_block_design",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2"
+    },
+    "design_tree": {
+      "dist_mem_gen_0": "",
+      "c_counter_binary_0": "",
+      "ila_0": "",
+      "clk_wiz_0": "",
+      "pwm_0": "",
+      "util_vector_logic_0": "",
+      "TickCounter_0": ""
+    },
+    "ports": {
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "PHASE": {
+            "value": "0.0"
+          }
+        }
+      },
+      "pwm_out": {
+        "type": "data",
+        "direction": "O"
+      }
+    },
+    "components": {
+      "dist_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:dist_mem_gen:8.0",
+        "xci_name": "lab8_block_design_dist_mem_gen_0_0",
+        "xci_path": "ip/lab8_block_design_dist_mem_gen_0_0/lab8_block_design_dist_mem_gen_0_0.xci",
+        "inst_hier_path": "dist_mem_gen_0",
+        "parameters": {
+          "coefficient_file": {
+            "value": "../../../../../lab8_block_design_dist_mem_gen_0_0.coe"
+          },
+          "data_width": {
+            "value": "8"
+          },
+          "default_data_radix": {
+            "value": "10"
+          },
+          "depth": {
+            "value": "128"
+          },
+          "input_options": {
+            "value": "registered"
+          },
+          "memory_type": {
+            "value": "rom"
+          },
+          "output_options": {
+            "value": "registered"
+          },
+          "single_port_output_clock_enable": {
+            "value": "true"
+          }
+        }
+      },
+      "c_counter_binary_0": {
+        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
+        "xci_name": "lab8_block_design_c_counter_binary_0_0",
+        "xci_path": "ip/lab8_block_design_c_counter_binary_0_0/lab8_block_design_c_counter_binary_0_0.xci",
+        "inst_hier_path": "c_counter_binary_0",
+        "parameters": {
+          "CE": {
+            "value": "true"
+          },
+          "Output_Width": {
+            "value": "7"
+          }
+        }
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "lab8_block_design_ila_0_0",
+        "xci_path": "ip/lab8_block_design_ila_0_0/lab8_block_design_ila_0_0.xci",
+        "inst_hier_path": "ila_0",
+        "parameters": {
+          "C_DATA_DEPTH": {
+            "value": "4096"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "lab8_block_design_clk_wiz_0_0",
+        "xci_path": "ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "130.958"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "98.575"
+          },
+          "CLKOUT2_JITTER": {
+            "value": "251.196"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "114.212"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "6.25"
+          },
+          "CLKOUT2_USED": {
+            "value": "false"
+          },
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "10.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "10.000"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "1"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "1"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          },
+          "USE_LOCKED": {
+            "value": "true"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "pwm_0": {
+        "vlnv": "xilinx.com:module_ref:pwm:1.0",
+        "xci_name": "lab8_block_design_pwm_0_0",
+        "xci_path": "ip/lab8_block_design_pwm_0_0/lab8_block_design_pwm_0_0.xci",
+        "inst_hier_path": "pwm_0",
+        "parameters": {
+          "clk_cnt_len": {
+            "value": "128"
+          },
+          "pwm_bits": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "pwm",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "duty_cycle": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "pwm_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "util_vector_logic_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "lab8_block_design_util_vector_logic_0_0",
+        "xci_path": "ip/lab8_block_design_util_vector_logic_0_0/lab8_block_design_util_vector_logic_0_0.xci",
+        "inst_hier_path": "util_vector_logic_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "TickCounter_0": {
+        "vlnv": "xilinx.com:module_ref:TickCounter:1.0",
+        "xci_name": "lab8_block_design_TickCounter_0_0",
+        "xci_path": "ip/lab8_block_design_TickCounter_0_0/lab8_block_design_TickCounter_0_0.xci",
+        "inst_hier_path": "TickCounter_0",
+        "parameters": {
+          "MAX": {
+            "value": "32640"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "TickCounter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "tick": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "TickCounter_0_tick": {
+        "ports": [
+          "TickCounter_0/tick",
+          "c_counter_binary_0/CE",
+          "dist_mem_gen_0/qspo_ce"
+        ]
+      },
+      "c_counter_binary_0_Q": {
+        "ports": [
+          "c_counter_binary_0/Q",
+          "dist_mem_gen_0/a"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "c_counter_binary_0/CLK",
+          "dist_mem_gen_0/clk",
+          "ila_0/clk",
+          "pwm_0/clk",
+          "TickCounter_0/clk"
+        ]
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "util_vector_logic_0/Op1"
+        ]
+      },
+      "dist_mem_gen_0_qspo": {
+        "ports": [
+          "dist_mem_gen_0/qspo",
+          "ila_0/probe0",
+          "pwm_0/duty_cycle"
+        ]
+      },
+      "pwm_0_pwm_out": {
+        "ports": [
+          "pwm_0/pwm_out",
+          "pwm_out"
+        ]
+      },
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "util_vector_logic_0_Res": {
+        "ports": [
+          "util_vector_logic_0/Res",
+          "pwm_0/rst"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+vhdl xil_defaultlib  \
+"../../../bd/lab8_block_design/ip/lab8_block_design_c_counter_binary_0_0/sim/lab8_block_design_c_counter_binary_0_0.vhd" \
+"../../../bd/lab8_block_design/ip/lab8_block_design_ila_0_0/sim/lab8_block_design_ila_0_0.vhd" \
+"../../../bd/lab8_block_design/sim/lab8_block_design.vhd" \
+"../../../bd/lab8_block_design/ip/lab8_block_design_pwm_0_0/sim/lab8_block_design_pwm_0_0.vhd" \
+"../../../bd/lab8_block_design/ip/lab8_block_design_TickCounter_0_0/sim/lab8_block_design_TickCounter_0_0.vhd" \
+
+nosort

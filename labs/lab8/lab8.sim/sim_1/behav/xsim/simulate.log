@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: xsimkernel Simulation Memory Usage: 922252 KB (Peak: 970244 KB), Simulation CPU Usage: 120470 ms

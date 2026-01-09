@@ -1,0 +1,19 @@
+0.7
+2020.2
+Oct 14 2022
+05:07:14
+/home/user/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/hdl/lab8_block_design_wrapper.v,1767948681,verilog,,,,lab8_block_design_wrapper,,,../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/7698,,,,,
+/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_TickCounter_0_0/sim/lab8_block_design_TickCounter_0_0.vhd,1767956257,vhdl,,,,lab8_block_design_tickcounter_0_0,,,,,,,,
+/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_c_counter_binary_0_0/sim/lab8_block_design_c_counter_binary_0_0.vhd,1767954837,vhdl,,,,lab8_block_design_c_counter_binary_0_0,,,,,,,,
+/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.v,1767954247,verilog,,/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_util_vector_logic_0_0/sim/lab8_block_design_util_vector_logic_0_0.v,,lab8_block_design_clk_wiz_0_0,,,../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/7698,,,,,
+/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_clk_wiz.v,1767955610,verilog,,/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.v,,lab8_block_design_clk_wiz_0_0_clk_wiz,,,../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/7698,,,,,
+/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_dist_mem_gen_0_0/sim/lab8_block_design_dist_mem_gen_0_0.v,1767954837,verilog,,/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_clk_wiz.v,,lab8_block_design_dist_mem_gen_0_0,,,../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/7698,,,,,
+/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_ila_0_0/sim/lab8_block_design_ila_0_0.vhd,1767954837,vhdl,,,,lab8_block_design_ila_0_0,,,,,,,,
+/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_pwm_0_0/sim/lab8_block_design_pwm_0_0.vhd,1767956257,vhdl,,,,lab8_block_design_pwm_0_0,,,,,,,,
+/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_util_vector_logic_0_0/sim/lab8_block_design_util_vector_logic_0_0.v,1767953207,verilog,,/home/user/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/hdl/lab8_block_design_wrapper.v,,lab8_block_design_util_vector_logic_0_0,,,../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/7698,,,,,
+/home/user/elettronica_base/labs/lab8/lab8.ip_user_files/bd/lab8_block_design/sim/lab8_block_design.vhd,1767956256,vhdl,,,,lab8_block_design,,,,,,,,
+/home/user/elettronica_base/labs/lab8/lab8.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+/home/user/elettronica_base/labs/lab8/lab8.srcs/sim_1/imports/new/ClockGen.vhd,1767775261,vhdl,,,,clockgen,,,,,,,,
+/home/user/elettronica_base/labs/lab8/lab8.srcs/sim_1/new/tb_lab8.vhd,1767948076,vhdl,,,,tb_lab8,,,,,,,,
+/home/user/elettronica_base/labs/lab8/lab8.srcs/sources_1/imports/new/TickCounter.vhd,1767775261,vhdl,,,,tickcounter,,,,,,,,
+/home/user/elettronica_base/labs/lab8/lab8.srcs/sources_1/new/pwmm.vhd,1767952757,vhdl,,,,pwm,,,,,,,,

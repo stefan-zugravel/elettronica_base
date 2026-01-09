@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/7698" \
+"../../../../lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_dist_mem_gen_0_0/sim/lab8_block_design_dist_mem_gen_0_0.v" \
+"../../../../lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_clk_wiz.v" \
+"../../../../lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.v" \
+"../../../../lab8.ip_user_files/bd/lab8_block_design/ip/lab8_block_design_util_vector_logic_0_0/sim/lab8_block_design_util_vector_logic_0_0.v" \
+"../../../../lab8.gen/sources_1/bd/lab8_block_design/hdl/lab8_block_design_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
