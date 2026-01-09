@@ -1,13 +1,13 @@
 LTspice 26.0.1 for Windows
 Circuit: C:\Users\stefa\Desktop\elettronica_base\labs\lab6\lab6d.net
-Start Time: Thu Jan  8 20:29:33 2026
+Start Time: Fri Jan  9 20:21:32 2026
 solver = Normal
 Maximum thread count: 8
 tnom = 27
 temp = 27
 method = trap
 Direct Newton iteration succeeded in finding operating point.
-Total elapsed time: 0.138 seconds.
+Total elapsed time: 0.113 seconds.
 
 Files loaded:
 C:\Users\stefa\Desktop\elettronica_base\labs\lab6\lab6d.net

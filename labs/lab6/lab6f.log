@@ -1,0 +1,15 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\Users\stefa\Desktop\elettronica_base\labs\lab6\lab6f.net
+Start Time: Fri Jan  9 20:21:20 2026
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.162 seconds.
+
+Files loaded:
+C:\Users\stefa\Desktop\elettronica_base\labs\lab6\lab6f.net
+C:\Users\stefa\Desktop\elettronica_base\labs\lab6\OPA690.LIB
+
