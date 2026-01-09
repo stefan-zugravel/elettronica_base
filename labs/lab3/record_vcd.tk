@@ -1,0 +1,9 @@
+restart
+
+open_vcd
+
+log_vcd [get_objects *]
+
+run 200 ns
+
+close_vcd
