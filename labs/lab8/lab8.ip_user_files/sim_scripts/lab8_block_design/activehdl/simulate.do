@@ -13,7 +13,7 @@ view structure
 
 do {lab8_block_design.udo}
 
-run
+run 1000ns
 
 endsim
 

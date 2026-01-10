@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-// Date        : Fri Jan  9 11:47:46 2026
+// Date        : Fri Jan  9 11:47:44 2026
 // Host        : 90726773a940 running 64-bit Ubuntu 22.04.5 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/user/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_c_counter_binary_0_0/lab8_block_design_c_counter_binary_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top lab8_block_design_c_counter_binary_0_0 -prefix
+//               lab8_block_design_c_counter_binary_0_0_ lab8_block_design_c_counter_binary_0_0_stub.v
 // Design      : lab8_block_design_c_counter_binary_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35ticsg324-1L

@@ -77,7 +77,7 @@ ARCHITECTURE lab8_block_design_TickCounter_0_0_arch OF lab8_block_design_TickCou
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF lab8_block_design_TickCounter_0_0_arch : ARCHITECTURE IS "lab8_block_design_TickCounter_0_0,TickCounter,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF lab8_block_design_TickCounter_0_0_arch: ARCHITECTURE IS "lab8_block_design_TickCounter_0_0,TickCounter,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=TickCounter,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,MAX=256}";
+  ATTRIBUTE CORE_GENERATION_INFO OF lab8_block_design_TickCounter_0_0_arch: ARCHITECTURE IS "lab8_block_design_TickCounter_0_0,TickCounter,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=TickCounter,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,MAX=32640}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF lab8_block_design_TickCounter_0_0_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -87,7 +87,7 @@ ARCHITECTURE lab8_block_design_TickCounter_0_0_arch OF lab8_block_design_TickCou
 BEGIN
   U0 : TickCounter
     GENERIC MAP (
-      MAX => 256
+      MAX => 32640
     )
     PORT MAP (
       clk => clk,

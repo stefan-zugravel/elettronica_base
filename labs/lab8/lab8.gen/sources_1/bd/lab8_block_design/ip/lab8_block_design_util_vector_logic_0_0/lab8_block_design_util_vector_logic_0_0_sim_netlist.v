@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-// Date        : Fri Jan  9 11:47:44 2026
+// Date        : Fri Jan  9 11:47:42 2026
 // Host        : 90726773a940 running 64-bit Ubuntu 22.04.5 LTS
-// Command     : write_verilog -force -mode funcsim
-//               /home/user/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_util_vector_logic_0_0/lab8_block_design_util_vector_logic_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top lab8_block_design_util_vector_logic_0_0 -prefix
+//               lab8_block_design_util_vector_logic_0_0_ lab8_block_design_util_vector_logic_0_0_sim_netlist.v
 // Design      : lab8_block_design_util_vector_logic_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

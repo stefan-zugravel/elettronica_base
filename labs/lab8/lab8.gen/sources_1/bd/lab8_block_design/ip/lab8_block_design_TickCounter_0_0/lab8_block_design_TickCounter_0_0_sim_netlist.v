@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-// Date        : Fri Jan  9 11:47:43 2026
-// Host        : 90726773a940 running 64-bit Ubuntu 22.04.5 LTS
+// Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+// Date        : Sat Jan 10 22:21:45 2026
+// Host        : LAPTOP-JR95NK3B running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               /home/user/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_TickCounter_0_0/lab8_block_design_TickCounter_0_0_sim_netlist.v
+//               c:/Users/stefa/Desktop/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_TickCounter_0_0/lab8_block_design_TickCounter_0_0_sim_netlist.v
 // Design      : lab8_block_design_TickCounter_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -37,76 +37,34 @@ module lab8_block_design_TickCounter_0_0_TickCounter
   input clk;
 
   wire clk;
-  wire [7:0]count;
-  wire [7:0]plusOp;
+  wire [14:0]count;
+  wire [14:0]plusOp;
+  wire plusOp_carry__0_n_0;
+  wire plusOp_carry__0_n_1;
+  wire plusOp_carry__0_n_2;
+  wire plusOp_carry__0_n_3;
+  wire plusOp_carry__1_n_0;
+  wire plusOp_carry__1_n_1;
+  wire plusOp_carry__1_n_2;
+  wire plusOp_carry__1_n_3;
+  wire plusOp_carry__2_n_3;
+  wire plusOp_carry_n_0;
+  wire plusOp_carry_n_1;
+  wire plusOp_carry_n_2;
+  wire plusOp_carry_n_3;
   wire tick;
   wire tick_i_1_n_0;
   wire tick_i_2_n_0;
+  wire tick_i_3_n_0;
+  wire tick_i_4_n_0;
+  wire [3:1]NLW_plusOp_carry__2_CO_UNCONNECTED;
+  wire [3:2]NLW_plusOp_carry__2_O_UNCONNECTED;
 
   LUT1 #(
     .INIT(2'h1)) 
     \count[0]_i_1 
        (.I0(count[0]),
         .O(plusOp[0]));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT2 #(
-    .INIT(4'h6)) 
-    \count[1]_i_1 
-       (.I0(count[0]),
-        .I1(count[1]),
-        .O(plusOp[1]));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT3 #(
-    .INIT(8'h78)) 
-    \count[2]_i_1 
-       (.I0(count[1]),
-        .I1(count[0]),
-        .I2(count[2]),
-        .O(plusOp[2]));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT4 #(
-    .INIT(16'h7F80)) 
-    \count[3]_i_1 
-       (.I0(count[2]),
-        .I1(count[0]),
-        .I2(count[1]),
-        .I3(count[3]),
-        .O(plusOp[3]));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT5 #(
-    .INIT(32'h7FFF8000)) 
-    \count[4]_i_1 
-       (.I0(count[3]),
-        .I1(count[1]),
-        .I2(count[0]),
-        .I3(count[2]),
-        .I4(count[4]),
-        .O(plusOp[4]));
-  LUT6 #(
-    .INIT(64'h7FFFFFFF80000000)) 
-    \count[5]_i_1 
-       (.I0(count[4]),
-        .I1(count[2]),
-        .I2(count[0]),
-        .I3(count[1]),
-        .I4(count[3]),
-        .I5(count[5]),
-        .O(plusOp[5]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT2 #(
-    .INIT(4'h9)) 
-    \count[6]_i_1 
-       (.I0(tick_i_2_n_0),
-        .I1(count[6]),
-        .O(plusOp[6]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT3 #(
-    .INIT(8'hD2)) 
-    \count[7]_i_1 
-       (.I0(count[6]),
-        .I1(tick_i_2_n_0),
-        .I2(count[7]),
-        .O(plusOp[7]));
   FDRE #(
     .INIT(1'b0)) 
     \count_reg[0] 
@@ -114,6 +72,46 @@ module lab8_block_design_TickCounter_0_0_TickCounter
         .CE(1'b1),
         .D(plusOp[0]),
         .Q(count[0]),
+        .R(tick_i_1_n_0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \count_reg[10] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(plusOp[10]),
+        .Q(count[10]),
+        .R(tick_i_1_n_0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \count_reg[11] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(plusOp[11]),
+        .Q(count[11]),
+        .R(tick_i_1_n_0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \count_reg[12] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(plusOp[12]),
+        .Q(count[12]),
+        .R(tick_i_1_n_0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \count_reg[13] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(plusOp[13]),
+        .Q(count[13]),
+        .R(tick_i_1_n_0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \count_reg[14] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(plusOp[14]),
+        .Q(count[14]),
         .R(tick_i_1_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -171,23 +169,88 @@ module lab8_block_design_TickCounter_0_0_TickCounter
         .D(plusOp[7]),
         .Q(count[7]),
         .R(tick_i_1_n_0));
-  LUT3 #(
-    .INIT(8'h08)) 
-    tick_i_1
-       (.I0(count[7]),
-        .I1(count[6]),
-        .I2(tick_i_2_n_0),
-        .O(tick_i_1_n_0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \count_reg[8] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(plusOp[8]),
+        .Q(count[8]),
+        .R(tick_i_1_n_0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \count_reg[9] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(plusOp[9]),
+        .Q(count[9]),
+        .R(tick_i_1_n_0));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 plusOp_carry
+       (.CI(1'b0),
+        .CO({plusOp_carry_n_0,plusOp_carry_n_1,plusOp_carry_n_2,plusOp_carry_n_3}),
+        .CYINIT(count[0]),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(plusOp[4:1]),
+        .S(count[4:1]));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 plusOp_carry__0
+       (.CI(plusOp_carry_n_0),
+        .CO({plusOp_carry__0_n_0,plusOp_carry__0_n_1,plusOp_carry__0_n_2,plusOp_carry__0_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(plusOp[8:5]),
+        .S(count[8:5]));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 plusOp_carry__1
+       (.CI(plusOp_carry__0_n_0),
+        .CO({plusOp_carry__1_n_0,plusOp_carry__1_n_1,plusOp_carry__1_n_2,plusOp_carry__1_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(plusOp[12:9]),
+        .S(count[12:9]));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 plusOp_carry__2
+       (.CI(plusOp_carry__1_n_0),
+        .CO({NLW_plusOp_carry__2_CO_UNCONNECTED[3:1],plusOp_carry__2_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({NLW_plusOp_carry__2_O_UNCONNECTED[3:2],plusOp[14:13]}),
+        .S({1'b0,1'b0,count[14:13]}));
   LUT6 #(
-    .INIT(64'h7FFFFFFFFFFFFFFF)) 
+    .INIT(64'h0000040000000000)) 
+    tick_i_1
+       (.I0(tick_i_2_n_0),
+        .I1(tick_i_3_n_0),
+        .I2(tick_i_4_n_0),
+        .I3(count[12]),
+        .I4(count[7]),
+        .I5(count[0]),
+        .O(tick_i_1_n_0));
+  LUT4 #(
+    .INIT(16'h7FFF)) 
     tick_i_2
-       (.I0(count[4]),
-        .I1(count[2]),
-        .I2(count[0]),
-        .I3(count[1]),
-        .I4(count[3]),
-        .I5(count[5]),
+       (.I0(count[8]),
+        .I1(count[1]),
+        .I2(count[14]),
+        .I3(count[6]),
         .O(tick_i_2_n_0));
+  LUT4 #(
+    .INIT(16'h8000)) 
+    tick_i_3
+       (.I0(count[3]),
+        .I1(count[9]),
+        .I2(count[13]),
+        .I3(count[4]),
+        .O(tick_i_3_n_0));
+  LUT4 #(
+    .INIT(16'h7FFF)) 
+    tick_i_4
+       (.I0(count[2]),
+        .I1(count[10]),
+        .I2(count[11]),
+        .I3(count[5]),
+        .O(tick_i_4_n_0));
   FDRE tick_reg
        (.C(clk),
         .CE(1'b1),

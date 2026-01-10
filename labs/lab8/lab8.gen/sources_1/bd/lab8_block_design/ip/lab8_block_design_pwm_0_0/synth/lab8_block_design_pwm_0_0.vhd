@@ -82,7 +82,7 @@ ARCHITECTURE lab8_block_design_pwm_0_0_arch OF lab8_block_design_pwm_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF lab8_block_design_pwm_0_0_arch : ARCHITECTURE IS "lab8_block_design_pwm_0_0,pwm,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF lab8_block_design_pwm_0_0_arch: ARCHITECTURE IS "lab8_block_design_pwm_0_0,pwm,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=pwm,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,pwm_bits=8,clk_cnt_len=1}";
+  ATTRIBUTE CORE_GENERATION_INFO OF lab8_block_design_pwm_0_0_arch: ARCHITECTURE IS "lab8_block_design_pwm_0_0,pwm,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=pwm,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,pwm_bits=8,clk_cnt_len=128}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF lab8_block_design_pwm_0_0_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -95,7 +95,7 @@ BEGIN
   U0 : pwm
     GENERIC MAP (
       pwm_bits => 8,
-      clk_cnt_len => 1
+      clk_cnt_len => 128
     )
     PORT MAP (
       clk => clk,
