@@ -8275,7 +8275,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_BGA:BGA484C100P22X22_2300X2300X260"
 			(at 91.44 97.79 0)
 			(effects
 				(font
