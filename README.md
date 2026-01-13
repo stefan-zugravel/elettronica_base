@@ -25,4 +25,7 @@ LTspice labs
 FIR filter and DDS compiler using FPGA
 
 ## lab8
-FPGA PWM controller used for LED breathing effect 
+FPGA PWM controller used for LED breathing effect
+
+## lab9
+A simple FSM in VHDL

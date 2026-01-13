@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="T20_FiniteStateMachineTb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="T20_FiniteStateMachineTb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000000000 s"></ZoomStartTime>
+      <ZoomEndTime time="200.000001000001 s"></ZoomEndTime>
+      <Cursor1Time time="70.030000000000 s"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="330"></NameColumnWidth>
+      <ValueColumnWidth column_width="99"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject type="logic" fp_name="/T20_FiniteStateMachineTb/Clk">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/T20_FiniteStateMachineTb/nRst">
+      <obj_property name="ElementShortName">nRst</obj_property>
+      <obj_property name="ObjectShortName">nRst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/T20_FiniteStateMachineTb/NorthRed">
+      <obj_property name="ElementShortName">NorthRed</obj_property>
+      <obj_property name="ObjectShortName">NorthRed</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/T20_FiniteStateMachineTb/NorthYellow">
+      <obj_property name="ElementShortName">NorthYellow</obj_property>
+      <obj_property name="ObjectShortName">NorthYellow</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/T20_FiniteStateMachineTb/NorthGreen">
+      <obj_property name="ElementShortName">NorthGreen</obj_property>
+      <obj_property name="ObjectShortName">NorthGreen</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/T20_FiniteStateMachineTb/WestRed">
+      <obj_property name="ElementShortName">WestRed</obj_property>
+      <obj_property name="ObjectShortName">WestRed</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/T20_FiniteStateMachineTb/WestYellow">
+      <obj_property name="ElementShortName">WestYellow</obj_property>
+      <obj_property name="ObjectShortName">WestYellow</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/T20_FiniteStateMachineTb/WestGreen">
+      <obj_property name="ElementShortName">WestGreen</obj_property>
+      <obj_property name="ObjectShortName">WestGreen</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/T20_FiniteStateMachineTb/ClockFrequencyHz">
+      <obj_property name="ElementShortName">ClockFrequencyHz</obj_property>
+      <obj_property name="ObjectShortName">ClockFrequencyHz</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/T20_FiniteStateMachineTb/ClockPeriod">
+      <obj_property name="ElementShortName">ClockPeriod</obj_property>
+      <obj_property name="ObjectShortName">ClockPeriod</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/T20_FiniteStateMachineTb/i_TrafficLights/Clk">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/T20_FiniteStateMachineTb/i_TrafficLights/nRst">
+      <obj_property name="ElementShortName">nRst</obj_property>
+      <obj_property name="ObjectShortName">nRst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/T20_FiniteStateMachineTb/i_TrafficLights/NorthRed">
+      <obj_property name="ElementShortName">NorthRed</obj_property>
+      <obj_property name="ObjectShortName">NorthRed</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/T20_FiniteStateMachineTb/i_TrafficLights/NorthYellow">
+      <obj_property name="ElementShortName">NorthYellow</obj_property>
+      <obj_property name="ObjectShortName">NorthYellow</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/T20_FiniteStateMachineTb/i_TrafficLights/NorthGreen">
+      <obj_property name="ElementShortName">NorthGreen</obj_property>
+      <obj_property name="ObjectShortName">NorthGreen</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/T20_FiniteStateMachineTb/i_TrafficLights/WestRed">
+      <obj_property name="ElementShortName">WestRed</obj_property>
+      <obj_property name="ObjectShortName">WestRed</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/T20_FiniteStateMachineTb/i_TrafficLights/WestYellow">
+      <obj_property name="ElementShortName">WestYellow</obj_property>
+      <obj_property name="ObjectShortName">WestYellow</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/T20_FiniteStateMachineTb/i_TrafficLights/WestGreen">
+      <obj_property name="ElementShortName">WestGreen</obj_property>
+      <obj_property name="ObjectShortName">WestGreen</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/T20_FiniteStateMachineTb/i_TrafficLights/State">
+      <obj_property name="ElementShortName">State</obj_property>
+      <obj_property name="ObjectShortName">State</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/T20_FiniteStateMachineTb/i_TrafficLights/Counter">
+      <obj_property name="ElementShortName">Counter</obj_property>
+      <obj_property name="ObjectShortName">Counter</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/T20_FiniteStateMachineTb/i_TrafficLights/ClockFrequencyHz">
+      <obj_property name="ElementShortName">ClockFrequencyHz</obj_property>
+      <obj_property name="ObjectShortName">ClockFrequencyHz</obj_property>
+   </wvobject>
+</wave_config>
