@@ -32,11 +32,11 @@ vmap c_counter_binary_v12_0_15 riviera/c_counter_binary_v12_0_15
 vmap util_vector_logic_v2_0_2 riviera/util_vector_logic_v2_0_2
 
 vlog -work xpm  -sv2k12 "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/7698" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/1b7e/hdl/verilog" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/122e/hdl/verilog" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/b205/hdl/verilog" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/fd26/hdl/verilog" \
-"C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-"C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+"/home/user/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"/home/user/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm -93  \
-"C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhd" \
+"/home/user/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work dist_mem_gen_v8_0_13  -v2k5 "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/7698" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/1b7e/hdl/verilog" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/122e/hdl/verilog" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/b205/hdl/verilog" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/fd26/hdl/verilog" \
 "../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/0bf5/simulation/dist_mem_gen_v8_0.v" \
@@ -77,12 +77,6 @@ vcom -work c_counter_binary_v12_0_15 -93  \
 vcom -work xil_defaultlib -93  \
 "../../../bd/lab8_block_design/ip/lab8_block_design_c_counter_binary_0_0/sim/lab8_block_design_c_counter_binary_0_0.vhd" \
 "../../../bd/lab8_block_design/ip/lab8_block_design_ila_0_0/sim/lab8_block_design_ila_0_0.vhd" \
-
-vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/7698" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/1b7e/hdl/verilog" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/122e/hdl/verilog" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/b205/hdl/verilog" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/fd26/hdl/verilog" \
-"../../../bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_clk_wiz.v" \
-"../../../bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.v" \
-
-vcom -work xil_defaultlib -93  \
 "../../../bd/lab8_block_design/ip/lab8_block_design_pwm_0_0/sim/lab8_block_design_pwm_0_0.vhd" \
 
 vlog -work util_vector_logic_v2_0_2  -v2k5 "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/7698" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/1b7e/hdl/verilog" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/122e/hdl/verilog" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/b205/hdl/verilog" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/fd26/hdl/verilog" \
@@ -93,6 +87,12 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../lab8.gen/sources_1/bd/lab8
 
 vcom -work xil_defaultlib -93  \
 "../../../bd/lab8_block_design/ip/lab8_block_design_TickCounter_0_0/sim/lab8_block_design_TickCounter_0_0.vhd" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/7698" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/1b7e/hdl/verilog" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/122e/hdl/verilog" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/b205/hdl/verilog" "+incdir+../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/fd26/hdl/verilog" \
+"../../../bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.v" \
+
+vcom -work xil_defaultlib -93  \
 "../../../bd/lab8_block_design/sim/lab8_block_design.vhd" \
 
 vlog -work xil_defaultlib \

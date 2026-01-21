@@ -6,6 +6,19 @@ entity T20_FiniteStateMachineTb is
 end entity;
   
 architecture sim of T20_FiniteStateMachineTb is
+
+    component T20_TrafficLights is
+        generic(ClockFrequencyHz : integer);
+        port(
+            Clk         : in std_logic;
+            nRst        : in std_logic; -- Negative reset
+            NorthRed    : out std_logic;
+            NorthYellow : out std_logic;
+            NorthGreen  : out std_logic;
+            WestRed     : out std_logic;
+            WestYellow  : out std_logic;
+            WestGreen   : out std_logic);
+        end component;
   
     -- We are using a low clock frequency to speed up the simulation
     constant ClockFrequencyHz : integer := 100; -- 100 Hz
@@ -22,8 +35,11 @@ architecture sim of T20_FiniteStateMachineTb is
   
 begin
   
+  
+  
     -- The Device Under Test (DUT)
-    i_TrafficLights : entity work.T20_TrafficLights(rtl)
+    --i_TrafficLights : entity work.T20_TrafficLights(rtl)
+    DUT_TrafficLights : T20_TrafficLights
     generic map(ClockFrequencyHz => ClockFrequencyHz)
     port map (
         Clk         => Clk,
@@ -35,8 +51,18 @@ begin
         WestYellow  => WestYellow,
         WestGreen   => WestGreen);
   
+  
+  
     -- Process for generating clock
-    Clk <= not Clk after ClockPeriod / 2;
+    clock_process : process is
+    begin
+        wait for ClockPeriod / 2;
+        Clk <= '0';
+        wait for ClockPeriod / 2;
+        Clk <= '1';
+    end process;
+  
+  
   
     -- Testbench sequence
     process is

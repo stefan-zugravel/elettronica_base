@@ -3,32 +3,34 @@
     with args -log lab8_block_design_clk_wiz_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab8_block_design_clk_wiz_0_0.tcl
 
 
-
-****** Vivado v2022.2 (64-bit)
-  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+****** Vivado v2022.2_AR000035739 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
   **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
+CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at '/home/user/.Xilinx/Vivado/2022.2/XilinxTclStore'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
 source lab8_block_design_clk_wiz_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 381.148 ; gain = 53.469
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2225.227 ; gain = 63.156 ; free physical = 27858 ; free virtual = 33443
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: lab8_block_design_clk_wiz_0_0
 Command: synth_design -top lab8_block_design_clk_wiz_0_0 -part xc7a35ticsg324-1L -incremental_mode off -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 14900
-INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-7075] Helper process launched with PID 7518
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/user/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1201.496 ; gain = 407.543
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2986.066 ; gain = 376.199 ; free physical = 24224 ; free virtual = 29593
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1469.951; parent = 1338.396; children = 131.555
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6080.035; parent = 2989.066; children = 3090.969
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'lab8_block_design_clk_wiz_0_0' [c:/Users/stefa/Desktop/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.v:68]
-INFO: [Synth 8-6157] synthesizing module 'lab8_block_design_clk_wiz_0_0_clk_wiz' [c:/Users/stefa/Desktop/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_clk_wiz.v:68]
-INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71326]
-INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71326]
-INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79852]
+INFO: [Synth 8-6157] synthesizing module 'lab8_block_design_clk_wiz_0_0' [/home/user/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.v:68]
+INFO: [Synth 8-6157] synthesizing module 'lab8_block_design_clk_wiz_0_0_clk_wiz' [/home/user/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/home/user/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71326]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [/home/user/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71326]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/home/user/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79852]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
 	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
@@ -42,69 +44,83 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2022.2/s
 	Parameter COMPENSATION bound to: ZHOLD - type: string 
 	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79852]
-INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
-INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
-INFO: [Synth 8-6155] done synthesizing module 'lab8_block_design_clk_wiz_0_0_clk_wiz' (0#1) [c:/Users/stefa/Desktop/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_clk_wiz.v:68]
-INFO: [Synth 8-6155] done synthesizing module 'lab8_block_design_clk_wiz_0_0' (0#1) [c:/Users/stefa/Desktop/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [/home/user/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79852]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/home/user/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/home/user/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'lab8_block_design_clk_wiz_0_0_clk_wiz' (0#1) [/home/user/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'lab8_block_design_clk_wiz_0_0' (0#1) [/home/user/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.v:68]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1294.559 ; gain = 500.605
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3060.137 ; gain = 450.270 ; free physical = 22775 ; free virtual = 28360
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1533.333; parent = 1338.396; children = 276.439
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6382.402; parent = 3060.137; children = 3322.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1294.559 ; gain = 500.605
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3075.633 ; gain = 465.766 ; free physical = 22752 ; free virtual = 28337
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1534.863; parent = 1338.396; children = 276.439
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6397.898; parent = 3075.633; children = 3322.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1294.559 ; gain = 500.605
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3075.633 ; gain = 465.766 ; free physical = 22752 ; free virtual = 28337
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1534.863; parent = 1338.396; children = 276.439
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6397.898; parent = 3075.633; children = 3322.266
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1294.559 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3090.516 ; gain = 0.035 ; free physical = 22732 ; free virtual = 28317
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/stefa/Desktop/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/Users/stefa/Desktop/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [c:/Users/stefa/Desktop/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_board.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/Users/stefa/Desktop/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_board.xdc] for cell 'inst'
-Parsing XDC File [c:/Users/stefa/Desktop/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/Users/stefa/Desktop/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.xdc] for cell 'inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/stefa/Desktop/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab8_block_design_clk_wiz_0_0_propImpl.xdc].
+Parsing XDC File [/home/user/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/user/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/user/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/user/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_board.xdc] for cell 'inst'
+Parsing XDC File [/home/user/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/user/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/user/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab8_block_design_clk_wiz_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/lab8_block_design_clk_wiz_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
-Parsing XDC File [C:/Users/stefa/Desktop/elettronica_base/labs/lab8/lab8.runs/lab8_block_design_clk_wiz_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/stefa/Desktop/elettronica_base/labs/lab8/lab8.runs/lab8_block_design_clk_wiz_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/user/elettronica_base/labs/lab8/lab8.runs/lab8_block_design_clk_wiz_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/user/elettronica_base/labs/lab8/lab8.runs/lab8_block_design_clk_wiz_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1294.559 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3161.801 ; gain = 0.000 ; free physical = 22696 ; free virtual = 28299
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1294.559 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3161.996 ; gain = 0.180 ; free physical = 22688 ; free virtual = 28291
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
-INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/user/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1294.559 ; gain = 500.605
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3162.105 ; gain = 552.238 ; free physical = 22720 ; free virtual = 28325
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1690.746; parent = 1415.161; children = 276.439
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6459.129; parent = 3136.863; children = 3322.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1294.559 ; gain = 500.605
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3162.105 ; gain = 552.238 ; free physical = 22720 ; free virtual = 28325
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1690.746; parent = 1415.161; children = 276.439
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6459.250; parent = 3136.984; children = 3322.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/stefa/Desktop/elettronica_base/labs/lab8/lab8.runs/lab8_block_design_clk_wiz_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/user/elettronica_base/labs/lab8/lab8.runs/lab8_block_design_clk_wiz_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 1294.559 ; gain = 500.605
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3162.105 ; gain = 552.238 ; free physical = 22720 ; free virtual = 28325
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1690.746; parent = 1415.161; children = 276.439
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6459.312; parent = 3137.047; children = 3322.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 1294.559 ; gain = 500.605
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3162.105 ; gain = 552.238 ; free physical = 22736 ; free virtual = 28341
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1690.746; parent = 1415.161; children = 276.439
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6459.410; parent = 3137.145; children = 3322.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -127,25 +143,33 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1294.559 ; gain = 500.605
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3162.105 ; gain = 552.238 ; free physical = 22733 ; free virtual = 28336
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1690.746; parent = 1415.161; children = 276.439
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6459.680; parent = 3137.414; children = 3322.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 1294.559 ; gain = 500.605
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3181.609 ; gain = 571.742 ; free physical = 22420 ; free virtual = 28043
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1798.861; parent = 1523.768; children = 276.439
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6503.875; parent = 3181.609; children = 3322.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 1294.559 ; gain = 500.605
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3181.777 ; gain = 571.910 ; free physical = 22420 ; free virtual = 28042
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1799.122; parent = 1524.028; children = 276.439
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6504.043; parent = 3181.777; children = 3322.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 1294.559 ; gain = 500.605
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3181.895 ; gain = 572.027 ; free physical = 22399 ; free virtual = 28021
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1801.552; parent = 1526.463; children = 276.439
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6504.160; parent = 3181.895; children = 3322.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -163,37 +187,49 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 1296.273 ; gain = 502.320
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3181.992 ; gain = 572.125 ; free physical = 22399 ; free virtual = 28022
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1801.809; parent = 1526.720; children = 276.439
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6504.258; parent = 3181.992; children = 3322.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 1296.273 ; gain = 502.320
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3182.004 ; gain = 572.137 ; free physical = 22399 ; free virtual = 28022
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1801.809; parent = 1526.720; children = 276.439
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6504.270; parent = 3182.004; children = 3322.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 1296.273 ; gain = 502.320
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3182.023 ; gain = 572.156 ; free physical = 22399 ; free virtual = 28022
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1801.815; parent = 1526.735; children = 276.439
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6504.289; parent = 3182.023; children = 3322.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 1296.273 ; gain = 502.320
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3182.031 ; gain = 572.164 ; free physical = 22399 ; free virtual = 28022
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1801.839; parent = 1526.759; children = 276.439
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6504.297; parent = 3182.031; children = 3322.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 1296.273 ; gain = 502.320
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3182.031 ; gain = 572.164 ; free physical = 22399 ; free virtual = 28022
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1801.839; parent = 1526.759; children = 276.439
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6504.297; parent = 3182.031; children = 3322.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 1296.273 ; gain = 502.320
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3182.035 ; gain = 572.168 ; free physical = 22399 ; free virtual = 28022
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1801.858; parent = 1526.778; children = 276.439
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6504.301; parent = 3182.035; children = 3322.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -214,18 +250,20 @@ Report Cell Usage:
 |3     |IBUF       |     1|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 1296.273 ; gain = 502.320
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3182.062 ; gain = 572.195 ; free physical = 22399 ; free virtual = 28022
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1801.858; parent = 1526.778; children = 276.439
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6504.328; parent = 3182.062; children = 3322.266
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:01:02 . Memory (MB): peak = 1296.273 ; gain = 502.320
-Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:07 . Memory (MB): peak = 1296.273 ; gain = 502.320
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3182.090 ; gain = 485.754 ; free physical = 22626 ; free virtual = 28252
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3182.117 ; gain = 572.223 ; free physical = 22626 ; free virtual = 28252
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1296.273 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3182.129 ; gain = 0.000 ; free physical = 22622 ; free virtual = 28248
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1315.941 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3183.188 ; gain = 0.000 ; free physical = 23120 ; free virtual = 28746
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -233,9 +271,9 @@ Synth Design complete, checksum: e31df08e
 INFO: [Common 17-83] Releasing license: Synthesis
 32 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:21 . Memory (MB): peak = 1315.941 ; gain = 902.309
-INFO: [Common 17-1381] The checkpoint 'C:/Users/stefa/Desktop/elettronica_base/labs/lab8/lab8.runs/lab8_block_design_clk_wiz_0_0_synth_1/lab8_block_design_clk_wiz_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP lab8_block_design_clk_wiz_0_0, cache-ID = f250505134485432
-INFO: [Common 17-1381] The checkpoint 'C:/Users/stefa/Desktop/elettronica_base/labs/lab8/lab8.runs/lab8_block_design_clk_wiz_0_0_synth_1/lab8_block_design_clk_wiz_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 3183.266 ; gain = 918.723 ; free physical = 23119 ; free virtual = 28746
+INFO: [Common 17-1381] The checkpoint '/home/user/elettronica_base/labs/lab8/lab8.runs/lab8_block_design_clk_wiz_0_0_synth_1/lab8_block_design_clk_wiz_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP lab8_block_design_clk_wiz_0_0, cache-ID = c3cbce1d49576205
+INFO: [Common 17-1381] The checkpoint '/home/user/elettronica_base/labs/lab8/lab8.runs/lab8_block_design_clk_wiz_0_0_synth_1/lab8_block_design_clk_wiz_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file lab8_block_design_clk_wiz_0_0_utilization_synth.rpt -pb lab8_block_design_clk_wiz_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Jan 10 22:21:44 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 20 17:00:23 2026...

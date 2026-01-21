@@ -1,23 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 29.12.2025 18:21:43
--- Design Name: 
--- Module Name: CounterBCD - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -69,10 +49,9 @@ begin
 end architecture rtl_simple ;
 
 
-
-
-
-
+---------------------------------------------------------------
+---------------------------------------------------------------
+---------------------------------------------------------------
 
 
 architecture rtl_bad of CounterBCD is
@@ -144,12 +123,9 @@ begin
 end architecture rtl_bad ;
 
 
-
-
-
-
-
-
+---------------------------------------------------------------
+---------------------------------------------------------------
+---------------------------------------------------------------
 
 architecture rtl_ticker of CounterBCD is
 
@@ -174,19 +150,6 @@ begin
    ------------------------
    --   "tick" counter   --
    ------------------------
-
-   --
-   -- **NOTE
-   --
-   -- Assuming 100 MHz input clock we can generate up to 2^32 -1 different tick periods, e.g.
-   --
-   -- MAX =    10 => one "tick" asserted every    10 x 10 ns = 100 ns  => logic "running" at  10 MHz
-   -- MAX =   100 => one "tick" asserted every   100 x 10 ns =   1 us  => logic "running" at   1 MHz
-   -- MAX =   200 => one "tick" asserted every   200 x 10 ns =   2 us  => logic "running" at 500 MHz
-   -- MAX =   500 => one "tick" asserted every   500 x 10 ns =   5 us  => logic "running" at 200 kHz
-   -- MAX =  1000 => one "tick" asserted every  1000 x 10 ns =  10 us  => logic "running" at 100 kHz
-   -- MAX = 10000 => one "tick" asserted every 10000 x 10 ns = 100 us  => logic "running" at  10 kHz etc.
-   --
 
    TickCounter_inst : TickCounter generic map(MAX => 10) port map(clk => clk, tick => count_en) ;
    --TickCounter_inst : TickCounter generic map(MAX => 50000000) port map(clk => clk, tick => count_en) ;  -- OK for LED mapping
@@ -214,25 +177,9 @@ begin
 end architecture rtl_ticker ;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---------------------------------------------------------------
+---------------------------------------------------------------
+---------------------------------------------------------------
 
 architecture rtl_PLL of CounterBCD is
 
@@ -294,18 +241,6 @@ begin
    ------------------------
    --   "tick" counter   --
    ------------------------
-
-   --
-   -- **NOTE
-   --
-   -- Assuming 100 MHz input clock we can generate up to 2^32 -1 different tick periods, e.g.
-   --
-   -- MAX =    10 => one "tick" asserted every    10 x 10 ns = 100 ns  => logic "running" at  10 MHz
-   -- MAX =   100 => one "tick" asserted every   100 x 10 ns =   1 us  => logic "running" at   1 MHz
-   -- MAX =   200 => one "tick" asserted every   200 x 10 ns =   2 us  => logic "running" at 500 MHz
-   -- MAX =   500 => one "tick" asserted every   500 x 10 ns =   5 us  => logic "running" at 200 kHz
-   -- MAX =  1000 => one "tick" asserted every  1000 x 10 ns =  10 us  => logic "running" at 100 kHz
-   -- MAX = 10000 => one "tick" asserted every 10000 x 10 ns = 100 us  => logic "running" at  10 kHz etc.
 
    TickCounter_inst : TickCounter generic map(MAX => 100) port map(clk => pll_clk, tick => count_en) ;          -- OK for simulations
    --TickCounter_inst : TickCounter generic map(MAX => 150000000) port map(clk => pll_clk, tick => count_en) ;  -- OK for LED mapping

@@ -1,1 +1,3 @@
 Time resolution is 1 ps
+$finish called at time : 73002 ns : File "/home/user/elettronica_base/labs/lab5/lab5.srcs/sim_1/new/tb_CounterBCD.vhd" Line 105
+INFO: xsimkernel Simulation Memory Usage: 921652 KB (Peak: 969948 KB), Simulation CPU Usage: 350 ms

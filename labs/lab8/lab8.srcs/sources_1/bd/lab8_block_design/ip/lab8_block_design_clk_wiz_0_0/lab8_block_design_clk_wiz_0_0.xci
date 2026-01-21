@@ -605,7 +605,7 @@
         "OUTPUTDIR": [ { "value": "../../../../../../lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2022.2" } ],
+        "SWVERSION": [ { "value": "2022.2_AR000035739" } ],
         "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
       }
     },

@@ -7,7 +7,7 @@
       "name": "lab8_block_design",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2022.2",
+      "tool_version": "2022.2_AR000035739",
       "validated": "true"
     },
     "design_tree": {
@@ -59,7 +59,7 @@
       "dist_mem_gen_0": {
         "vlnv": "xilinx.com:ip:dist_mem_gen:8.0",
         "xci_name": "lab8_block_design_dist_mem_gen_0_0",
-        "xci_path": "ip\\lab8_block_design_dist_mem_gen_0_0\\lab8_block_design_dist_mem_gen_0_0.xci",
+        "xci_path": "ip/lab8_block_design_dist_mem_gen_0_0/lab8_block_design_dist_mem_gen_0_0.xci",
         "inst_hier_path": "dist_mem_gen_0",
         "parameters": {
           "coefficient_file": {
@@ -91,7 +91,7 @@
       "c_counter_binary_0": {
         "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
         "xci_name": "lab8_block_design_c_counter_binary_0_0",
-        "xci_path": "ip\\lab8_block_design_c_counter_binary_0_0\\lab8_block_design_c_counter_binary_0_0.xci",
+        "xci_path": "ip/lab8_block_design_c_counter_binary_0_0/lab8_block_design_c_counter_binary_0_0.xci",
         "inst_hier_path": "c_counter_binary_0",
         "parameters": {
           "CE": {
@@ -105,7 +105,7 @@
       "ila_0": {
         "vlnv": "xilinx.com:ip:ila:6.2",
         "xci_name": "lab8_block_design_ila_0_0",
-        "xci_path": "ip\\lab8_block_design_ila_0_0\\lab8_block_design_ila_0_0.xci",
+        "xci_path": "ip/lab8_block_design_ila_0_0/lab8_block_design_ila_0_0.xci",
         "inst_hier_path": "ila_0",
         "parameters": {
           "C_DATA_DEPTH": {
@@ -122,7 +122,7 @@
       "pwm_0": {
         "vlnv": "xilinx.com:module_ref:pwm:1.0",
         "xci_name": "lab8_block_design_pwm_0_0",
-        "xci_path": "ip\\lab8_block_design_pwm_0_0\\lab8_block_design_pwm_0_0.xci",
+        "xci_path": "ip/lab8_block_design_pwm_0_0/lab8_block_design_pwm_0_0.xci",
         "inst_hier_path": "pwm_0",
         "parameters": {
           "clk_cnt_len": {
@@ -177,7 +177,7 @@
       "util_vector_logic_0": {
         "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
         "xci_name": "lab8_block_design_util_vector_logic_0_0",
-        "xci_path": "ip\\lab8_block_design_util_vector_logic_0_0\\lab8_block_design_util_vector_logic_0_0.xci",
+        "xci_path": "ip/lab8_block_design_util_vector_logic_0_0/lab8_block_design_util_vector_logic_0_0.xci",
         "inst_hier_path": "util_vector_logic_0",
         "parameters": {
           "C_OPERATION": {
@@ -191,7 +191,7 @@
       "TickCounter_0": {
         "vlnv": "xilinx.com:module_ref:TickCounter:1.0",
         "xci_name": "lab8_block_design_TickCounter_0_0",
-        "xci_path": "ip\\lab8_block_design_TickCounter_0_0\\lab8_block_design_TickCounter_0_0.xci",
+        "xci_path": "ip/lab8_block_design_TickCounter_0_0/lab8_block_design_TickCounter_0_0.xci",
         "inst_hier_path": "TickCounter_0",
         "parameters": {
           "MAX": {
@@ -230,7 +230,7 @@
       "clk_wiz_0": {
         "vlnv": "xilinx.com:ip:clk_wiz:6.0",
         "xci_name": "lab8_block_design_clk_wiz_0_0",
-        "xci_path": "ip\\lab8_block_design_clk_wiz_0_0\\lab8_block_design_clk_wiz_0_0.xci",
+        "xci_path": "ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.xci",
         "inst_hier_path": "clk_wiz_0",
         "parameters": {
           "CLKOUT1_JITTER": {

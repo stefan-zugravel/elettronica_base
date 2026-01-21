@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-// Date        : Sat Jan 10 22:21:44 2026
-// Host        : LAPTOP-JR95NK3B running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2022.2_AR000035739 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+// Date        : Tue Jan 20 17:00:22 2026
+// Host        : 9ef758d30c3a running 64-bit Ubuntu 22.04.5 LTS
 // Command     : write_verilog -force -mode synth_stub
-//               c:/Users/stefa/Desktop/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_stub.v
+//               /home/user/elettronica_base/labs/lab8/lab8.gen/sources_1/bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_stub.v
 // Design      : lab8_block_design_clk_wiz_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35ticsg324-1L

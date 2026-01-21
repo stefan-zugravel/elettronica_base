@@ -1,9 +1,9 @@
 -makelib xcelium_lib/xpm -sv \
-  "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-  "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+  "/home/user/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "/home/user/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 -endlib
 -makelib xcelium_lib/xpm \
-  "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhd" \
+  "/home/user/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib xcelium_lib/dist_mem_gen_v8_0_13 \
   "../../../../lab8.gen/sources_1/bd/lab8_block_design/ipshared/0bf5/simulation/dist_mem_gen_v8_0.v" \
@@ -44,12 +44,6 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/lab8_block_design/ip/lab8_block_design_c_counter_binary_0_0/sim/lab8_block_design_c_counter_binary_0_0.vhd" \
   "../../../bd/lab8_block_design/ip/lab8_block_design_ila_0_0/sim/lab8_block_design_ila_0_0.vhd" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_clk_wiz.v" \
-  "../../../bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
   "../../../bd/lab8_block_design/ip/lab8_block_design_pwm_0_0/sim/lab8_block_design_pwm_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/util_vector_logic_v2_0_2 \
@@ -60,6 +54,12 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/lab8_block_design/ip/lab8_block_design_TickCounter_0_0/sim/lab8_block_design_TickCounter_0_0.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0_clk_wiz.v" \
+  "../../../bd/lab8_block_design/ip/lab8_block_design_clk_wiz_0_0/lab8_block_design_clk_wiz_0_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
   "../../../bd/lab8_block_design/sim/lab8_block_design.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
