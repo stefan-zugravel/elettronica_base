@@ -1,0 +1,14 @@
+### Footprint positions - created on 2026-01-15T11:20:16+0100 ###
+### Printed by KiCad version 9.0.5
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val              Package                                          PosX       PosY       Rot  Side
+J1        Conn_Coaxial     MMCX_Molex_73415-0961_Horizontal_1.0mm-PCB    54.0000  -123.0000    0.0000  top
+J2        Conn_Coaxial     MMCX_Molex_73415-0961_Horizontal_1.0mm-PCB    54.0000  -132.0000    0.0000  top
+J3        Conn_Coaxial     MMCX_Molex_73415-0961_Horizontal_1.0mm-PCB   146.0000  -114.0000  180.0000  top
+J4        Conn_Coaxial     MMCX_Molex_73415-0961_Horizontal_1.0mm-PCB   102.0000  -136.0000   90.0000  top
+J5        Conn_Coaxial_x2  LEMO-EPG.00.302.NLN                          144.1175   -49.0000    0.0000  top
+J6        Conn_Coaxial_x2  LEMO-EPG.00.302.NLN                           57.8825   -49.0000  180.0000  top
+J7        Conn_Coaxial_x2  LEMO-EPG.00.302.NLN                          144.1175   -66.0000    0.0000  top
+J8        Conn_Coaxial_x2  LEMO-EPG.00.302.NLN                          145.3800   -90.1500  180.0000  top
+## End

@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_inverter_behav/xsimk -simmode gui -wdb tb_inverter_behav.wdb -simrunnum 0 -socket 33307
+Design successfully loaded
+Design Loading Memory Usage: 829460 KB (Peak: 829460 KB)
+Design Loading CPU Usage: 40 ms
+Simulation completed
+Simulation Memory Usage: 911488 KB (Peak: 968872 KB)
+Simulation CPU Usage: 90 ms

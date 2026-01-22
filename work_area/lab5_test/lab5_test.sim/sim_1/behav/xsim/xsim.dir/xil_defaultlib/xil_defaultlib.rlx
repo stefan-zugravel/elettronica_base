@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 14 2022
+05:07:14
+/home/user/work_docker/lab5_test/lab5_test.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1769079893,verilog,,,,clk_wiz_0,,,../../../../lab5_test.gen/sources_1/ip/clk_wiz_0,,,,,
+/home/user/work_docker/lab5_test/lab5_test.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1769079893,verilog,,/home/user/work_docker/lab5_test/lab5_test.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../lab5_test.gen/sources_1/ip/clk_wiz_0,,,,,
+/home/user/work_docker/lab5_test/lab5_test.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+/home/user/work_docker/lab5_test/lab5_test.srcs/sim_1/new/clockgen.vhd,1769077577,vhdl,,,,clockgen,,,,,,,,
+/home/user/work_docker/lab5_test/lab5_test.srcs/sim_1/new/tb_CounterBCD.vhd,1769080340,vhdl,,,,tb_counterbcd,,,,,,,,
+/home/user/work_docker/lab5_test/lab5_test.srcs/sources_1/new/CounterBCD.vhd,1769079946,vhdl,,,,counterbcd,,,,,,,,

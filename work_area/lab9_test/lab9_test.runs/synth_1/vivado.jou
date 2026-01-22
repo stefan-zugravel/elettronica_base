@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2_AR000035739 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Jan 22 10:36:34 2026
+# Process ID: 9699
+# Current directory: /home/user/work_docker/lab9_test/lab9_test.runs/synth_1
+# Command line: vivado -log Trafficlights.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Trafficlights.tcl
+# Log file: /home/user/work_docker/lab9_test/lab9_test.runs/synth_1/Trafficlights.vds
+# Journal file: /home/user/work_docker/lab9_test/lab9_test.runs/synth_1/vivado.jou
+# Running On: 2dde74575086, OS: Linux, CPU Frequency: 2502.057 MHz, CPU Physical cores: 1, Host memory: 37769 MB
+#-----------------------------------------------------------
+source Trafficlights.tcl -notrace

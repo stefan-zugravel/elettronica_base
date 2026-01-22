@@ -1,0 +1,9 @@
+Manufacturer=Analog Devices
+PartNumber=ADG849YKSZ-500RL7
+PartCategory=Integrated Circuit
+PackageCategory=SOT23 (6-Pin)
+PinCount=6
+Version=6.1
+Released=2020-12-28 13:21:44
+Downloaded=2026-01-15 11:08:37
+3D=Y

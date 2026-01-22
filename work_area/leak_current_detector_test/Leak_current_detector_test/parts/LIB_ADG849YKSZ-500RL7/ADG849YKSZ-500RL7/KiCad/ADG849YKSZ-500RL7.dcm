@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADG849YKSZ-500RL7
+D SPDT/2:1 Mux
+K
+F http://componentsearchengine.com/Datasheets/1/ADG849YKSZ-500RL7.pdf
+$ENDCMP
+#
+#End Doc Library

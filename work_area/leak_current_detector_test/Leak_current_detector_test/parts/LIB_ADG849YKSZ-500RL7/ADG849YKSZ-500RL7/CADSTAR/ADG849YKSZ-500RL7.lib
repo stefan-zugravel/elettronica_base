@@ -1,0 +1,16 @@
+.ADG849YKSZ-500RL7 :1 ;SPDT/2:1 Mux
+SOT65P210X110-6N
+*STM IC
+*NGS
+*PLB 1="IN" 2="VDD" 3="GND" 4="S1" 5="D" 6="S2"
+*MXP 6
+*DFN ADG849YKSZ-500RL7
+~!Mouser Part Number (584-ADG849YKSZ-500R7)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Analog-Devices/ADG849YKSZ-500RL7?qs=BpaRKvA4VqH8qBqwWySUcg%3D%3D)
+~!Manufacturer_Name (Analog Devices)
+~!Manufacturer_Part_Number (ADG849YKSZ-500RL7)
+~!Link Datasheet (http://componentsearchengine.com/Datasheets/1/ADG849YKSZ-500RL7.pdf)
+~!Height (1.1mm)
+~!3D_Model (ADG849YKSZ-500RL7)
+ADG849YKSZ-500RL7
+1.1!U 2.1!U 3.1!U 6.1!U 5.1!U 4.1!U 

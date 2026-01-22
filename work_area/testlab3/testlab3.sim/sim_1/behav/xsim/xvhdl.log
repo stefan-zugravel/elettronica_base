@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/user/work_docker/testlab3/testlab3.srcs/sim_1/new/tb_logic_gates.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_logic_gates'
